@@ -1,0 +1,202 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Rajdeep Gill} \\ \vspace{1pt}
+    \small 431-998-9785 $|$ \href{mailto:gillr10@myumanitoba.ca}{\underline{gillr10@myumanitoba.ca}} $|$ 
+    \href{https://www.linkedin.com/in/rajdeep-gill-4ab365220}{\underline{linkedin.com/in/rajdeep-gill}} $|$
+    \href{https://github.com/Rajdeep-Gill}{\underline{github.com/Rajdeep-Gill}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Manitoba}{Winnipeg, MB}
+      {Bachelor of Science in Computer Engineering}{Sept. 2021 - Present}
+      \begin{itemize}
+          \item \small{GPA: \textit{4.45/4.5}}
+          \item \small{Relavent Coursework: \textit{Engineering Algorithms, Data structures and Algorithms, Systems Engineering Principles}}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Undergraduate Research Student}{May 2024 - Current}{University of Manitoba}{Winnipeg, MB}
+		\resumeItemListStart
+			\resumeItem{Implemented a centroid detection algorithm using computer vision techniques to identify the center of cells in optical data, achieving a success rate on 92\% of cells}
+			\resumeItem{Designed and trained a neural network model using TensorFlow and Keras to predict cell viability from optical data, resulting in an 85\% accuracy rate}
+			\resumeItem{Developed a tKinter-based GUI for data input and cell visualization, enhancing user experience with an interactive interface for analysis and data observation}
+		\resumeItemListEnd
+
+    \resumeSubheading{Undergraduate Research Student}{May 2023 - August 2023}{University of Manitoba}{Winnipeg, MB}
+		\resumeItemListStart
+			\resumeItem{Employed dimensionality reduction techniques, including t-SNE (t-distributed Stochastic Neighbor Embedding) and PCA (Principal Component Analysis), to compare and cluster data}
+			\resumeItem{Implemented parallel processing to accelerate the gathering and processing of data, achieving a two-fold reduction in runtime}
+		\resumeItemListEnd
+      
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+         \resumeProjectHeading{\href{https://github.com/Rajdeep-Gill/discord-clone}{\textbf{Discord Clone} \faLink} $|$ \emph{React, TypeScript, HTML/CSS, Next.js}}{}
+			\resumeItemListStart
+				\resumeItem{Developed a feature-rich Discord Clone using Next.js, React, and TypeScript, providing users with a seamless and familiar real-time communication experience}
+				\resumeItem{Utilized Tailwind CSS to enhance the front-end design, ensuring a visually appealing and responsive user interface on both desktop and mobile}
+				\resumeItem{Leveraged PlanetScale as the database solution for storing messages, servers, and user accounts}
+				\resumeItem{Implemented authentication using Clerk for secure user login and registration via Email or Google}
+				\resumeItem{Integrated LiveKit for the implementation of high-quality video and voice calls, and web sockets for real-time messaging}
+				\resumeItem{Provided users with extensive control, allowing them to edit and delete messages, create and delete servers, and manage server members effectively}
+			\resumeItemListEnd
+
+        \resumeProjectHeading{\href{https://github.com/Rajdeep-Gill/Chess-Game}{\textbf{Chess Game} \faLink} $|$ \emph{Python}}{}
+          	\resumeItemListStart
+            	\resumeItem{Created a command line chess game using Python}
+            	\resumeItem{Implemented features such as move validation, checkmate detection, and piece promotion}
+            	\resumeItem{Currently developing multiplayer functionality using socket programming to enable real-time play between users}
+          	\resumeItemListEnd
+
+		
+    \resumeSubHeadingListEnd
+
+    
+
+%--------------AWARDS--------------
+\section{Awards}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {{\textbf{NSERC Undergraduate Student Research Award}}{}}{2023, 2024}
+        \resumeProjectHeading
+            {\textbf{Presidents Scholarship}\emph{}}{2021-2024}
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, Android Studio, IntelliJ} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, tKinter} \\
+     \textbf{Other}{: Microsoft Office Suite}
+    }}
+ \end{itemize}
+%-------------------------------------------
+
+\end{document}
