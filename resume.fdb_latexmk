@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1723162052.93604 "c:/Users/sgill/OneDrive/Desktop/rajdeep/Job Related/Resume/resume.tex" "resume.pdf" "resume" 1723162053.70431 0
+["pdflatex"] 1724883413.75311 "c:/Users/sgill/OneDrive/Desktop/rajdeep/Job Related/Resume/resume.tex" "resume.pdf" "resume" 1724883415.09745 0
   "C:/Users/sgill/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723161373 82871 5b39d54dd2fc7a35cc2aed8c989bc912 ""
   "C:/Users/sgill/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707100058 24225045 d1c7eb65962e215ba4d0491accd9f633 ""
   "C:/Users/sgill/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463869852 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -92,10 +92,10 @@
   "C:/Users/sgill/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
   "C:/Users/sgill/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1700599895 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "C:/Users/sgill/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/sgill/OneDrive/Desktop/rajdeep/Job Related/Resume/resume.tex" 1723162052 8183 80567f84a5a703cc88d41aff0b1790b6 ""
-  "resume.aux" 1723162053 776 ae7443a7dc19206ced016d5685f091d2 "pdflatex"
-  "resume.out" 1723162053 463 e794f8ad2e3f28e0b5ac78716ec5b746 "pdflatex"
-  "resume.tex" 1723162052 8183 80567f84a5a703cc88d41aff0b1790b6 ""
+  "c:/Users/sgill/OneDrive/Desktop/rajdeep/Job Related/Resume/resume.tex" 1724883412 8173 933377704a4fb0ddfe487a3bdeb1e1c8 ""
+  "resume.aux" 1724883414 776 ae7443a7dc19206ced016d5685f091d2 "pdflatex"
+  "resume.out" 1724883414 463 e794f8ad2e3f28e0b5ac78716ec5b746 "pdflatex"
+  "resume.tex" 1724883412 8173 933377704a4fb0ddfe487a3bdeb1e1c8 ""
   (generated)
   "resume.aux"
   "resume.log"
