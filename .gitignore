@@ -1,6 +1,8 @@
-resume.out
-resume.synctex.gz
-resume.log
-resume.fls
-resume.fdb_latexmk
-resume.aux
+*.out
+*.synctex.gz
+*.log
+*.fls
+*.fdb_latexmk
+*.aux
+*.synctex.gz
+*.synctex.gz\(busy\)
