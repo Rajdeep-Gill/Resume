@@ -6,3 +6,4 @@
 *.aux
 *.synctex.gz
 *.synctex.gz\(busy\)
+*.ds_store

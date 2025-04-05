@@ -1,0 +1,20 @@
+During my time at the Biosensors Research Lab, I developed a convolutional neural network (CNN) to predict biological cell viability from 10,000+ diffraction pattern images, achieving 85% accuracy and demonstrating the potential for non-invasive assessment. 
+
+To improve data quality, I created a new particle detection algorithm using computer vision techniques, increasing the success rate by 17% (from 75% to 92%) from previous methods.
+
+Additionally, I built a Python-based interactive GUI for researchers to visualize, filter, and analyze diffraction patterns and model predictions, enabling more efficient data interpretation.
+
+To further support research efforts, I designed and implemented a scalable SQL database to centralize 100,000+ optical diffraction records, replacing a manual file-sharing system and improving data accessibility and integrity.
+
+-------------
+
+I applied dimensionality reduction techniques such as t-SNE and PCA to analyze and cluster datasets, uncovering key correlations to guide future research. 
+
+To enhance computational efficiency, I optimized data analysis workflows by implementing parallel processing, reducing processing time by 90%. 
+
+Additionally, I developed an oscilloscope interfacing program to automate data collection, improving both speed and accuracy. 
+
+Throughout the project, I delivered weekly progress updates, effectively communicating findings and incorporating feedback to refine methodologies and improve outcomes.
+
+github,computer vision,python,sql database,pca,convolutional neural network,accuracy,feedback,machine learning,implementing,oscilloscope,data visualization,parallel processing,speed and accuracy,dimensionality reduction,data analysis,dielectrophoresis,classification,parallel programming,systems engineering,computer engineering,algorithms,data structures,languages,html/css,next.js,javascript,matlab,frameworks,c++,android studio,opencv,java,intellij,git,sql,visual studio,pytorch,typescript,tensorflow,pcb,google docs,user permissions,postgresql,js,solidworks,restful api,authentication,
+ 

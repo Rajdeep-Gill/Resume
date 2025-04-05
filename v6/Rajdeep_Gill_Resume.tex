@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault, medium]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rajdeep Gill} \\ \vspace{1pt}
+    (431) 998-9785 $|$
+    \href{mailto:hi.rajdeepgill@gmail.com}{\underline{hi.rajdeepgill@gmail.com}} $|$ 
+    \href{https://github.com/Rajdeep-Gill}{\underline{github.com/Rajdeep-Gill}}
+
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Bachelor of Science in Computer Engineering (Co-op)}{May 2026}
+        {University of Manitoba}{Winnipeg, MB}
+        \begin{itemize}[leftmargin=0.15in, label={}]
+            \small{\item{
+              GPA: \textit{4.45/4.5} \\
+              Relevant Coursework: \textit{Data Structures and Algorithms, Systems Engineering Principles, Parallel Programming, Digital System Design, Microprocessor Interfacing} \\
+            }}
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Incoming intern for the summer 2025 term, working on the brokerage team.}
+      \resumeItemListEnd
+    \resumeSubheading{Biosensors Research Lab - University of Manitoba}{May 2024 - Dec 2024}{Undergraduate Research Student}{Winnipeg, MB}
+    \resumeItemListStart
+      \resumeItem{Designed and trained a convolutional neural network to predict biological cell viability from 10,000+ diffraction pattern images, achieving \textbf{85\%} accuracy and demonstrating potential for non-invasive cell viability assessment}
+      \resumeItem{Enhanced particle diffraction centroid detection using computer vision, improving success rate by \textbf{17\%} (from 75\% to 92\%) and providing more accurate data for the CNN model}
+      \resumeItem{Developed a Python-based data visualization tool with an interactive GUI to process, filter, and display diffraction patterns and model predictions, enabling efficient data analysis and interpretation}
+      \resumeItem{Utilized unsupervised machine learning techniques to help group and classify cells based on impedance measurements, providing insights into cell health and viability}
+      \resumeItemListEnd
+
+      \resumeSubheading{Biosensors Research Lab - University of Manitoba}{May 2023 - Aug 2023}{Undergraduate Research Student}{Winnipeg, MB}
+      \resumeItemListStart
+        \resumeItem{Applied dimensionality reduction techniques (t-SNE, PCA) to analyze and cluster datasets, uncovering key correlations for future research directions}
+        \resumeItem{Optimized data analysis workflows by implementing parallel processing, reducing processing time by 90\%}
+        \resumeItem{Developed an oscilloscope interfacing program to automate data collection, improving speed and accuracy}
+      \resumeItemListEnd      
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{{\textbf{Google Docs Clone}} $|$ \emph{React, TypeScript, HTML/CSS, Next.js}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a Google Docs clone with real-time collaboration, user authentication, and document sharing}
+        \resumeItem{Utilized Convex to store and sync document data, allowing multiple users to edit in real-time}
+        \resumeItem{Implemented organization-wide document sharing and user permissions to control access to documents}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{{\textbf{Financial Dashboard}} $|$ \emph{React, TypeScript, HTML/CSS, Next.js, Hono.js}}{}
+      \resumeItemListStart
+        \resumeItem{Created an expense and income tracking dashboard with user authentication and real-time data visualization}
+        \resumeItem{Implemented a RESTful API to handle user data and transactions, using a PostgreSQL database to store user information}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Deaf Curling Accessibility Aid} $|$ \emph{C, ESP-32, Fusion360}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a device to assist deaf curlers in receiving instructions from their skip during games}
+        \resumeItem{Designed a PCB and 3D-printed enclosure ensuring durability and portability}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+    
+
+%--------------AWARDS--------------
+% \section{Awards}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%       {{\textbf{Engineering Academic Excellence Award - Computer Engineering}}{}}{2024}
+%     \resumeProjectHeading
+%       {{\textbf{NSERC Undergraduate Student Research Award}}{}}{2023, 2024}
+%     \resumeProjectHeading
+%       {{\textbf{President's Scholarship}}{}}{2021-2024}
+%   \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%--------------PUBLICATIONS---------------
+\section{Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    B. Arzhang, E. Kovacs, J. Lee, \textbf{R. Gill}, E. Salimi, D. Thomson, and G. Bridges, "Machine Learning Classification of Microplastics by Integrating Optical and Dielectrophoresis Features," in \textit{IEEE AP-S/URSI 2025}. \\
+    B. Arzhang, G. Bridges, \textbf{R. Gill}, J. Lee, E. Kovacs, E. Salimi, and D. Thomson, "Dielectric Analysis of Single Biological Cells at Both Microwave and Optical Frequencies," in \textit{IEEE AP-S/URSI 2025}. \\
+  }}
+\end{itemize}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+  \textbf{Languages}{: Python, Java, C, C++, JavaScript, TypeScript, HTML/CSS, R, SQL, MATLAB} \\
+  \textbf{Frameworks \& Libraries}{: React, Next.js, TensorFlow, PyTorch, OpenCV, } \\
+  \textbf{Developer Tools}{: Git, VSCode, Visual Studio, Android Studio, IntelliJ} \\
+  }}
+\end{itemize}
+%-------------------------------------------
+
+%\textbf{Note:} Avaliable from May 1, 2025 to August 31, 2025.
+
+\end{document}
