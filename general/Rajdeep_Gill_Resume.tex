@@ -1,0 +1,229 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault, medium]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+	\textbf{\Huge \scshape Rajdeep Gill} \\ \vspace{1pt}
+	(431) 998-9785 $|$
+	\href{mailto:hi.rajdeepgill@gmail.com}{\underline{hi.rajdeepgill@gmail.com}} $|$
+	\href{https://github.com/Rajdeep-Gill}{\underline{github.com/Rajdeep-Gill}}
+
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Science in Computer Engineering (Co-op)}{May 2026}
+{University of Manitoba}{Winnipeg, MB}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      GPA: $4.45/4.5$ \\
+      Relevant Coursework: Data Structures and Algorithms, Parallel Computing, Computer Architecture, Operating Systems, Embedded Systems, Digital Signal Processing \\
+      }}
+\end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
+\resumeItemListStart
+\resumeItem{Incoming intern for the Summer 2025 term on the Brokerage team} % Kept original phrasing as it's future work
+\resumeItemListEnd
+\resumeSubheading{Biosensors Research Lab - University of Manitoba}{May 2024 - Dec 2024}{Undergraduate Research Student}{Winnipeg, MB}
+\resumeItemListStart
+  \resumeItem{
+    Developed a convolutional neural network using Python and PyTorch to predict cell viability from 10,000+ diffraction images, achieving 85\% accuracy, demonstrating potential for non-invasive cell viability assessment
+  }
+  \resumeItem{
+    Created a data visualization tool in Python to load, train and visualize the model's perdiction on different cell types
+  }
+  \resumeItem{
+    Developed a data extraction pipeline using Python, OpenCV and parallel processing to extract key features from cell images for training the model
+  }
+  \resumeItem{
+    Utilized a PostgreSQL database to store raw data, extracted features and model predictions, along with a REST API to fetch data for the visualization tool
+  }
+\resumeItemListEnd
+
+
+\resumeSubheading{Biosensors Research Lab - University of Manitoba}{May 2023 - Aug 2023}{Undergraduate Research Student}{Winnipeg, MB}
+\resumeItemListStart
+  \resumeItem{Developed an automated oscilloscope testing platform with Python and PyVISA, streamlining data collection protocols to enhance measurement speed and ensure repeatability}
+  \resumeItem{Optimized existing data analysis pipeline using parallel processing and refactoring existing algorithms, resulting in 2.5x speedup}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{{\textbf{Google Docs Clone}} $|$ \emph{React, TypeScript, HTML/CSS, Next.js}}{}
+\resumeItemListStart
+\resumeItem{Developed a Google Docs clone with real-time collaboration, user authentication, and document sharing}
+\resumeItem{Utilized Convex to store and sync document data, allowing multiple users to edit in real-time}
+\resumeItem{Implemented organization-wide document sharing and user permissions to control access to documents}
+\resumeItemListEnd
+
+\resumeProjectHeading{{\textbf{Financial Dashboard}} $|$ \emph{React, TypeScript, HTML/CSS, Next.js, Hono.js, PostgreSQL}}{}
+\resumeItemListStart
+\resumeItem{Created an expense and income tracking dashboard with user authentication and real-time data visualization}
+\resumeItem{Implemented a RESTful API to handle user data and transactions, and a PostgreSQL database to store user information}
+\resumeItemListEnd
+\resumeProjectHeading{{\textbf{Machine Learning Classification of Microplastics}} $|$ \emph{Python, PyTorch, OpenCV}}{}
+\resumeItemListStart
+\resumeItem{Developed a machine learning model to classify microplastics based on their optical and dielectrophoresis features}
+\resumeItem{Created a image processing pipeline to extract features, discard low-quality images, and prepare data for training}
+\resumeItem{Paper accepted at IEEE AP-S/URSI 2025, "Machine Learning Classification of Microplastics by Integrating Optical and Dielectrophoresis Features"}
+\resumeItemListEnd
+
+
+\resumeProjectHeading{\textbf{Deaf Curling Accessibility Aid} $|$ \emph{C, ESP-32, Fusion360}}{}
+\resumeItemListStart
+\resumeItem{Developed a fully wireless communication system for deaf curlers to receive instructions from their skip during games}
+\resumeItem{Implemented a custom communication protocol to ensure reliable and low-power communication between devices}
+\resumeItem{Designed a PCB, 3D-printed enclosure and antenna to ensure durability and portability}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%--------------AWARDS--------------
+% \section{Awards}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%       {{\textbf{Engineering Academic Excellence Award - Computer Engineering}}{}}{2024}
+%     \resumeProjectHeading
+%       {{\textbf{NSERC Undergraduate Student Research Award}}{}}{2023, 2024}
+%     \resumeProjectHeading
+%       {{\textbf{President's Scholarship}}{}}{2021-2024}
+%   \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+    \textbf{Programming Languages}{: Python, C, C++, Java, TypeScript, JavaScript} \\
+    \textbf{Frameworks \& Libraries}{: PyTorch, OpenCV, OpenMPI, Tkinter,React, Node, Express, Spring Boot, Flask} \\
+    \textbf{Tools}{: Git, Jenkins, Jira, AWS, Linux, Docker, Firebase, SQL, NoSQL, Excel, REST API} \\
+    % --- Concepts derived from coursework, experience, and projects ---
+    \textbf{Concepts}{: Backend Development, Frontend Development, Fullstack Development, Software Engineering, Machine Learning, Networking, CI/CD, Microservices, Infrastructure Engineering, DevOps, Automation, Agile} \\
+    }}
+\end{itemize}
+%-------------------------------------------
+
+%\textbf{Note:} Avaliable from May 1, 2025 to August 31, 2025.
+
+\end{document}
