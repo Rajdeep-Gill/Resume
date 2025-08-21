@@ -1,0 +1,257 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+%\usepackage[scale=.9]{lmodern} % or helvet
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+%///////////////////////////////%
+%----SPEEMCH'S RESUME TEMPLATE----%
+%///////////////////////////////%
+
+%----------FONT OPTIONS----------
+
+% sans serif font -  lmss is recommended
+% serif font - cmr is recommended
+% ctrl-f and replace one with the other 
+
+
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+\addtolength{\footskip}{-0.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{-1.5em}
+
+% \definecolor{burntorange}{HTML}{BF5700}
+\definecolor{burntorange}{HTML}{000000}
+% Sections formatting
+\titleformat{\section}{\color{burntorange}\vspace{-10pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\vspace{-1pt} \color{burntorange}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {\fontfamily{lmss}#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+     {\fontfamily{lmss} \textbf{#1} & #2 \\[-1.6pt]
+      \textit{\small#3} & \textit{\small #4} \\}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingInline}[3]{
+  \vspace{2pt}\item
+  \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{1.2em}\textbf{#1} \textit{\small #3} & #2
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingUpd}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \hspace{1.2em}\textbf{#1} & {\bfseries #2} \\
+      \hspace{1.25em}\textit{\small#3} & \textit{\small#4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\fontfamily{lmss}\textit{\small#1} & \textit{\small #2} \\}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+     {\fontfamily{lmss} \small#1 & #2 \\}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{\fontfamily{lmss}$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+
+
+\begin{document}
+\fontfamily{lmss} %FONT HERE
+\vspace{-1em}
+\begin{center}
+    \textbf{\LARGE\scshape Rajdeep Gill}\\ 
+    \small 431-998-9785 $|$ \href{hi.rajdeepgill@gmail.com}{\underline{hi.rajdeepgill@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/gill-rajdeep/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/rajdeep-gill}{\underline{GitHub}} $|$
+    Canadian Citizen\\
+\end{center}
+\vspace{-1.5em}
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+    \resumeSubheadingInline
+      {University of Manitoba}{May 2026}{}
+    \vspace{-0.4em}
+  \resumeSubHeadingListEnd
+  %\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{{\quad B.S. Computer Engineering}\hfill {\textbf{4.46/4.5 GPA}}
+    \vspace{0.1em}\\
+    {\quad Coursework: Data Structures and Algorithms, Parallel Computing, Digital Signal Processing}}
+  %\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheadingUpd{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
+      \vspace{0.3em}
+      \resumeItemListStart
+        \resumeItem{Working on creating a dashboard to visualize and handle margin calls and liquidations for Robinhood's brokerage team.}
+        \resumeItem{Implementing integration tests to ensure the reliability of the dashboard, and working on improving the performance of the dashboard by optimizing the data fetching and processing.}
+        %\resumeItem{Bullet Point 2 - Accomplished X (deliverable) as measured by Y (metrics) by doing Z (technical/impl. details).}
+        %\resumeItem{Bullet Point 3 - Accomplished X (deliverable) as measured by Y (metrics) by doing Z (technical/impl. details).}
+      \resumeItemListEnd
+
+    \resumeSubheadingUpd{Biosensors Research Lab}{May 2024 - Dec 2024}{Undergraduate Research Student}{Winnipeg, MB}
+      \vspace{0.3em}
+      \resumeItemListStart
+        \resumeItem{Developed and trained a CNN to predict health of cells based on scattering images, achieving 85\% accuracy.}
+        \resumeItem{Created a data visualization tool to display cell health data based on the model's predictions.}
+        \resumeItem{Improved parameter extraction by 17\% with a custom centroid detection algorithm, making use of dynamic thresholding and edge detection.}
+        \resumeItem{Developed a data extraction pipeline with OpenCV and parallelizing with OpenMP, reducing processing time by 40\%.}
+        \resumeItem{Built a SQL database to store experimental data and processed results, along with a REST API to query the data.}
+      \resumeItemListEnd
+
+    \resumeSubheadingUpd{Biosensors Research Lab}{May 2023 - Aug 2023}{Undergraduate Research Student}{Winnipeg, MB}
+      \vspace{0.3em}
+      \resumeItemListStart
+        \resumeItem{Developed an automated oscilliscope testing platform with PyVISA to streamline data collection, reducing manual collection time and ensuring repeatability.}
+        \resumeItem{Optimized existing data analysis algorithms with vectorization and parallelization, reducing processing time by 90\%.}
+        \resumeItem{Explored the use of unsupervised learning to cluster data points based on their impedance spectra.}
+        \resumeItem{Implemented a prediction model based on a Gaussian Mixture Model and probabilistic neural networks to predict the health of cells based on their impedance spectra.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  \vspace{-0.5em}
+%-----------------PROJECTS------------------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+%-----------ACTIVITIES-----------
+%\vspace{0pt}\section{Activities}
+    %\resumeSubHeadingListStart
+
+    %\resumeSubheadingInline{Student Organization}{}{Member}
+    %\vspace{0.2em}
+    %    \resumeItemListStart
+    %    \resumeItem{Bullet Point 1.}
+    %    \resumeItem{Bullet Point 2.}
+    %  \resumeItemListEnd
+    %\resumeSubHeadingListEnd
+    
+    \resumeSubheadingInline{Distributed Image Processing}{}{(C++, OpenMPI)}
+    \vspace{0.2em}
+        \resumeItemListStart
+            \resumeItem{Created a distributed image processing tool to process large images across multiple nodes, achieving a 95\% efficiency.}
+            \resumeItem{Implemented a custom communication protocol to optimize data transfer latency and throughput.}
+            \resumeItem{Utilized OpenMPI to handle the distribution of tasks across multiple nodes, ensuring scalability and reliability.}
+        \resumeItemListEnd
+
+    \resumeSubheadingInline{Collaborative Document Editor}{}{(React, TypeScript, Socket.io, Flask)}
+    \vspace{0.2em}
+        \resumeItemListStart
+        \resumeItem{Built a collaborative document editor enabling real-time multi-user editing and communication.}
+        \resumeItem{Implemented bidirectional messaging with Socket.io for seamless updates, and developed a RESTful API using Flask.}
+        \resumeItem{Enhanced user experience by integrating autocomplete and in-line suggestions powered by Google's Gemini API.}
+      \resumeItemListEnd
+
+    \resumeSubheadingInline{Financial Dashboard}{}{(React, TypeScript, Hono, PostgreSQL)}
+    \vspace{0.2em}
+        \resumeItemListStart
+            \resumeItem{Developed a financial dashboard to visualize financial data, allowing users to track their investments and expenses.}
+            \resumeItem{Utilized Hono to create a REST API to fetch and store financial data, and PostgreSQL to store the data.}
+            \resumeItem{Implemented React to create a user-friendly interface, allowing users to visualize their financial data.}
+        \resumeItemListEnd
+
+    \resumeSubheadingInline{Interpretor}{}{(C++)}
+    \vspace{0.2em}
+        \resumeItemListStart
+            \resumeItem{Developed an interpretor for a custom language to allow users to write and run code in a terminal.}
+            \resumeItem{Implemented a lexer and parser to tokenize and parse the code, and a semantic analyzer to check for errors.}
+        \resumeItemListEnd
+    \resumeSubheadingInline{Network Simulator}{}{(Java)}
+    \vspace{0.2em}
+        \resumeItemListStart
+            \resumeItem{Developed a network simulator with packet loss, congestion and corruption to test various protocols.}
+            \resumeItem{Implemented Alternate Bit, Go-Back N, Selective Repeat and TCP to test under various conditions.}
+        \resumeItemListEnd
+    
+
+    
+
+    \resumeSubHeadingListEnd
+\vspace{-1em}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+    \quad\small{\textbf{Programming Languages}: C++, Python, TypeScript, JavaScript, Java}\\\vspace{0.2em}
+    \quad\small{\textbf{Frameworks and Libraries:} React, NextJS, PyTorch, OpenMPI}\\\vspace{0.2em}
+    \quad\small{\textbf{Tools:} Git, Docker, PostgreSQL}\\\vspace{0.2em}
+    \quad\small{\textbf{Concepts:} Backend/Frontend Development, Machine Learning, Networking, CI/CD, Microservices, Agile}
+%-------------------------------------------
+\end{document}
