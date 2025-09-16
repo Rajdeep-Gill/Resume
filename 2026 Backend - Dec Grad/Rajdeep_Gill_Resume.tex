@@ -144,7 +144,7 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheadingInline
-{University of Manitoba}{May 2026}{}
+{University of Manitoba}{Dec 2026}{}
 \resumeSubHeadingListEnd
 %\begin{itemize}[leftmargin=0.15in, label={}]
 \vspace{-0.1em}
@@ -156,35 +156,34 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
-\resumeSubheadingUpd{Robinhood}{Sept 2025 - Present}{Software Engineer Contractor}{Toronto, ON}
-\resumeItemListStart
-\resumeItem{Contracted to develop advanced margin and equities trading tools for active traders, enhancing risk management capabilities and decision-making through sophisticated web-based trading interfaces.}
-\resumeItemListEnd
+% \resumeSubheadingUpd{Robinhood}{Sept 2025 - Present}{Software Engineer Contractor}{Toronto, ON}
+% \resumeItemListStart
+%   \resumeItem{Contracted to develop advanced margin and equities trading tools for active traders, enhancing risk management capabilities and decision-making through sophisticated web-based trading interfaces.}
+% \resumeItemListEnd
 
 \resumeSubheadingUpd{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Reduced customer margin calls by \textbf{37\%} and boosted margin trading activity by \textbf{23\%} by launching a real-time maintenance dashboard with embedded trade execution, surfacing key risk indicators like maintenance requirement.}
-\resumeItem{Architected a cross-platform margin experience using a server-driven UI approach to unify business logic across Web, iOS, and Android, driving a \textbf{43\%} increase in margin usage.}
-\resumeItem{Accelerated the adoption of a new \textbf{Protobuf design system} by implementing its foundational components, adding a logging framework to improve observability, and resolving initial implementation gaps.}
-\resumeItem{Repaired the core integration suite for the margin experience and added \textbf{20+ test suites}, achieving \textbf{86\%} coverage.}
-%\resumeItem{Bullet Point 2 - Accomplished X (deliverable) as measured by Y (metrics) by doing Z (technical/impl. details).}
-%\resumeItem{Bullet Point 3 - Accomplished X (deliverable) as measured by Y (metrics) by doing Z (technical/impl. details).}
+\resumeItem{Reduced customer margin calls by \textbf{24\%} and boosted trading activity by \textbf{13\%} through a real-time maintenance dashboard built with \textbf{React and TypeScript}, featuring embedded trade execution and risk indicators.}
+\resumeItem{Architected a cross-platform margin experience using a \textbf{server-driven UI approach with gRPC} to unify business logic across Web, iOS, and Android, driving a \textbf{43\%} increase in margin usage.}
+\resumeItem{Accelerated the adoption of a new \textbf{Protobuf design system} by implementing its foundational components in \textbf{Python and TypeScript}, and adding a \textbf{logging framework} to improve observability.}
+\resumeItem{Collaborated with 4 mobile engineers and led the redesign of the margin call experience on web by incorporating the maintenance dashboard into the existing margin call flow.}
+\resumeItem{Repaired the core integration suite for the margin experience using \textbf{Jest and Pytest}, adding \textbf{20+ test suites} with comprehensive mocking strategies, achieving \textbf{86\%} coverage.}
 \resumeItemListEnd
 
-\resumeSubheadingUpd{Biosensors Research Lab}{May 2024 - Dec 2024}{Undergraduate Research Student}{Winnipeg, MB}
+\resumeSubheadingUpd{Biosensors Research Lab}{May 2024 - Dec 2024}{Machine Learning Research Intern}{Winnipeg, MB}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Achieved \textbf{85\%} accuracy in predicting cell viability from \textbf{10,000+} diffraction images using a \textbf{custom CNN}, establishing a viable, non-invasive measurement method for cell health}
-\resumeItem{Built an interactive model validation GUI in Python that rendered SHAP values to provide real-time explanations of prediction drivers, enabling researchers to debug model behavior on a per-cell basis}
-\resumeItem{Architected an end-to-end data processing pipeline that boosted morphological parameter extraction accuracy by \textbf{17\%} and cut pre-processing runtime by \textbf{50\%} through parallelization using Python's multiprocessing library}
-\resumeItem{Replaced a high-risk system of manually-shared hard drives with a centralized MySQL database, eliminating data loss and versioning conflicts, and enabling complex, cross-experiment queries for the first time.}
+\resumeItem{Built a custom \textbf{CNN} achieving \textbf{85\% accuracy} on 10,000+ diffraction images, providing a scalable, \textbf{non-invasive alternative} to trypan blue staining (\textbf{90-95\% accuracy}) for assessing cell health.}
+\resumeItem{Built a \textbf{model validation GUI} in \textbf{Python} that displayed \textbf{SHAP-based feature attributions}, allowing biologists to debug predictions cell by cell}
+\resumeItem{Engineered an end-to-end \textbf{parallelized data pipeline} that improved morphological parameter extraction by \textbf{17\%} and halved preprocessing runtime.}
+\resumeItem{Deployed a \textbf{centralized MySQL database} to replace manual hard-drive sharing, eliminating data loss and versioning conflicts while enabling researchers to run \textbf{cross-experiment queries} and collaborate on shared datasets.}
 \resumeItemListEnd
 
-\resumeSubheadingUpd{Biosensors Research Lab}{May 2023 - Aug 2023}{Undergraduate Research Student}{Winnipeg, MB}
+\resumeSubheadingUpd{Biosensors Research Lab}{May 2023 - Aug 2023}{Machine Learning Research Intern}{Winnipeg, MB}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Engineered a general-purpose Python control framework for the lab's oscilloscope, abstracting low-level hardware commands into a high-level API that empowered researchers to script and automate entire experimental sequences.}
+\resumeItem{Engineered a \textbf{Python control framework} for lab oscilloscopes that abstracted low-level hardware commands into a high-level API, allowing\textbf{automation of entire experimental sequences} and cutting manual setup time.}
 \resumeItem{Slashed data analysis runtime by over \textbf{90\%} (1 hour to $<$6 minutes) by refactoring legacy Python scripts, replacing inefficient loops with vectorized NumPy operations}
 \resumeItem{Developed a novel classification system using a Gaussian Mixture Model to determine cell viability from time-series impedance data, creating a probabilistic tool for assessing sample health}
 \resumeItemListEnd
@@ -218,14 +217,13 @@
 \resumeItemListEnd
 
 
-
-\resumeSubheadingInline{Collaborative Document Editor}{}{(React, TypeScript, Socket.io, Flask)}
+\resumeSubheadingInline{Distributed Image Processing}{}{(C++, OpenMPI)}
 \vspace{0.2em}
 \resumeItemListStart
-\resumeItem{Engineered a collaborative text editor for up to 20 simultaneous users by broadcasting text operations, cursor locations, and online statuses, via WebSockets, achieving a sub-250ms synchronization latency}
-\resumeItem{Integrated Gemini to provide real-time suggestions for text, formatting and content generation, reducing writing time}
+\resumeItem{Accelerated the processing of gigapixel-scale images by 3.8x compared to a single-threaded approach by designing an OpenMPI pipeline that partitioned data across a 4-node cluster}
+\resumeItem{Implemented a custom communication protocol to optimize data transfer latency and throughput.}
+\resumeItem{Utilized OpenMPI to handle the distribution of tasks across multiple nodes, ensuring scalability and reliability.}
 \resumeItemListEnd
-
 
 \resumeSubHeadingListEnd
 \vspace{-1em}
