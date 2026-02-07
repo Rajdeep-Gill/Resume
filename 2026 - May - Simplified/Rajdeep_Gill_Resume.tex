@@ -82,7 +82,7 @@
   \vspace{2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
      {\fontfamily{lmss} \textbf{#1} & #2 \\[-1.6pt]
-      \textit{\small#3} & \textit{\small #4} \\}
+      \textit{\small#3} & \textit{\small #4}}
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -104,14 +104,14 @@
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      {\fontfamily{lmss}\textit{\small#1} & \textit{\small #2} \\}
+      {\fontfamily{lmss}\textit{\small#1} & \textit{\small #2}}
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-     {\fontfamily{lmss} \small#1 & #2 \\}
+     {\fontfamily{lmss} \small#1 & #2}
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -152,6 +152,14 @@
 }
 %\end{itemize}
 
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\quad\small{\textbf{Programming Languages}: TypeScript, JavaScript, Pythom, C++, Java}\\\vspace{0.2em}
+\quad\small{\textbf{Frameworks and Libraries:} React, NextJS, PyTorch, OpenMPI, Node.js, Express, Flask}\\\vspace{0.2em}
+\quad\small{\textbf{Tools:} Git, Docker, PostgreSQL, Github Actions, Bazel, gRPC, Protocol Buffers (Protobuf)}\\\vspace{0.2em}
+%-------------------------------------------
+
+
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
@@ -163,27 +171,29 @@
 \resumeSubheadingUpd{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Reduced customer margin calls by \textbf{24\%} and boosted trading activity by \textbf{13\%} through a \textbf{real-time} margin maintenance table built with React and TypeScript, featuring embedded trade execution and risk indicators.}
-\resumeItem{Architected a cross-platform margin experience using a \textbf{server-driven UI approach} to unify business logic across Web, iOS, and Android, driving a \textbf{43\%} increase in margin usage.}
-\resumeItem{Redesigned the margin call experience utilizing server-driven UI and incorporating the maintenance table.}
-\resumeItem{Accelerated the adoption of a new \textbf{Protobuf} design system by implementing its foundational components in \textbf{Python and TypeScript}, and adding a \textbf{logging framework} to improve observability.}
+\resumeItem{Developed and shipped a real-time margin maintenance table built with React and Typescript, featuring embedded trade execution and risk indicators.}
+\resumeItem{Overhauled the margin experience by expanding the server-driven UI to include futures traders and unifying business logic across Web, iOS, and Android, resulting in a 43\% increase in margin usage.}
+\resumeItem{Redesigned the margin call experience to include the maintenance table and support short selling functionality}
+\resumeItem{Enhanced a Protobuf-based server-driven UI architecture by implementing 10+ foundational components in Python and Typescript along with a logging framework to increase system usage and maintainability}
+\resumeItem{Repaired the core integration suite for the margin experience and added 20+ test suites, achieving 93\% code coverage}
 \resumeItemListEnd
 
 \resumeSubheadingUpd{Biosensors Research Lab}{May 2024 - Dec 2024}{Machine Learning Research Intern}{Winnipeg, MB}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Built a custom \textbf{CNN} achieving \textbf{85\% accuracy} on 10,000+ diffraction images, providing a scalable, \textbf{non-invasive alternative} to traditional staining methods for assessing cell health.}
-\resumeItem{Built a \textbf{model validation GUI} in Python displaying SHAP-based feature attributions, allowing researches to debug predictions cell by cell and improve model accuracy.}
-\resumeItem{Engineered an end-to-end \textbf{parallelized data processing pipeline} that improved the accuracy of morphological parameter extraction by \textbf{17\%} and cut processing runtime by 75\%.}
-\resumeItem{Deployed a \textbf{centralized MySQL database} to replace manual hard-drive sharing, eliminating data loss and versioning conflicts while enabling researchers to run \textbf{cross-experiment queries} and collaborate on shared datasets.}
+\resumeItem{Created a custom convolutional neural network to predict cell viability from optical microscopy images, achieving 85\% accuracy, establishing a non-invasive alternative to traditional staining methods for assessing cell health}
+\resumeItem{Developed a model validation GUI in Python displaying SHAP-based feature attributions, and visualizing cell images to debug model predictions}
+\resumeItem{Created a parallelized data processing pipeline with a new morphological parameter extraction algorithm, improving accuracy by 17\% and cutting processing runtime by 75\%.}
+\resumeItem{Replaced a high-risk system of manually-shared hard drives with a centralized MySQL database, allowing for cross-experiment queries and easy data sharing}
 \resumeItemListEnd
 
 \resumeSubheadingUpd{Biosensors Research Lab}{May 2023 - Aug 2023}{Machine Learning Research Intern}{Winnipeg, MB}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Engineered a \textbf{Python control framework} for lab oscilloscopes that abstracted low-level hardware commands into a high-level API, allowing \textbf{automation of entire experimental sequences} and cutting manual setup time.}
-\resumeItem{Slashed data analysis runtime by over \textbf{90\%} (1 hour to $<$6 minutes) by refactoring legacy Python scripts, replacing inefficient loops with vectorized NumPy operations}
-\resumeItem{Developed a classification system using a Gaussian Mixture Model to determine cell viability from time-series impedance data, creating a probabilistic tool for assessing sample health on an unsupervised basis.}
+\resumeItem{Built a framework for electronic testing equipment, allowing for automation of entire experimental sequences through Python scripts and cutting manual setup time}
+\resumeItem{Refactored legacy Python scripts to slash data analysis runtime by 90\%, replacing inefficient loops with vectorized NumPy operations}
+\resumeItem{Developed a classification system using a Gaussian Mixture Model to determine cell viability from time-series impedance data, creating a probabilistic tool for assessing sample health on an unsupervised basis}
+\resumeItem{Programmed an FPGA to coordinate microfluidic device operations, integrating di-electrophoresis control with synchronized LED illumination and cell imaging}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -233,11 +243,5 @@
 \resumeSubHeadingListEnd
 \vspace{-1em}
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
-\quad\small{\textbf{Programming Languages}: C++, Python, TypeScript, JavaScript, Java}\\\vspace{0.2em}
-\quad\small{\textbf{Frameworks and Libraries:} React, NextJS, PyTorch, OpenMPI, Node.js, Express, Flask}\\\vspace{0.2em}
-\quad\small{\textbf{Tools:} Git, Docker, PostgreSQL, Github Actions, Bazel, gRPC, Protocol Buffers (Protobuf)}\\\vspace{0.2em}
-%-------------------------------------------
 \end{document}
 
