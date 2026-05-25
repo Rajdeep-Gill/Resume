@@ -92,8 +92,7 @@
 \newcommand{\resumeSubheadingUpd}[4]{
   \vspace{2pt}\item
     \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \hspace{1.2em}\textbf{#1} & {\bfseries #2} \\
-      \hspace{1.25em}\textit{\small#3} & \textit{\small#4}
+      \hspace{1.2em}\textbf{#1} $|$ \textit{\small#3} & {\bfseries #2}
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -139,20 +138,20 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheadingInline
-{University of Manitoba}{May 2026}{}
+{University of Manitoba}{June 2026}{}
 \resumeSubHeadingListEnd
 %\begin{itemize}[leftmargin=0.15in, label={}]
 \vspace{-0.1em}
-\small{{\quad Bachelor of Science in Computer Engineering}\hfill {\textbf{4.46/4.5 GPA}}
+\small{{\quad Bachelor of Science in Computer Engineering}\hfill {\textbf{4.46/4.50 GPA}}
 	\vspace{0.1em}\\
 }
 %\end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
-\quad\small{\textbf{Programming Languages}: TypeScript, JavaScript, Pythom, C++, Java}\\\vspace{0.2em}
+\quad\small{\textbf{Programming Languages}: TypeScript, JavaScript, Python, C++, Java}\\\vspace{0.2em}
 \quad\small{\textbf{Frameworks and Libraries:} React, NextJS, PyTorch, OpenMPI, Node.js, Express, Flask}\\\vspace{0.2em}
-\quad\small{\textbf{Tools:} Git, Docker, PostgreSQL, Github Actions, Bazel, gRPC, Protocol Buffers (Protobuf), Jira, Agile}\\\vspace{0.2em}
+\quad\small{\textbf{Tools:} Git, Docker, PostgreSQL, Github Actions, Bazel, gRPC, Protocol Buffers (Protobuf)}\\\vspace{0.2em}
 %-------------------------------------------
 
 
@@ -160,12 +159,14 @@
 \section{Experience}
 \resumeSubHeadingListStart
 
-\resumeSubheadingUpd{Robinhood}{Sep 2025 - Current}{Software Engineer Contractor}{Toronto, ON}
+\resumeSubheadingUpd{Robinhood}{Sep 2025 - Current}{Software Engineer}{Toronto, ON}
 \vspace{0.3em}
 \resumeItemListStart
 \resumeItem{Led a team of 3 engineers to build a tax lot selling feature, implementing observables for real-time market data updates and virtualization to ensure performant rendering for users with thousands of positions, driving \$55M in notional volume}
-\resumeItem{Own the entire margin web experience as the team's sole frontend engineer, driving feature launches through A/B experimentation and collaborating directly with backend, mobile, and design partners to ship features end-to-end}
-\resumeItem{Built a native margin onboarding flow for Robinhood Legend, eliminating a redirect to the classic app, reducing onboarding time and increasing margin enrollment rates by 12\%}
+\resumeItem{Gained ownership of the entire margin web experience as the team's sole frontend engineer, driving feature launches through A/B testing and collaborating directly with backend, mobile, and design partners to ship features end-to-end}
+\resumeItem{Enhanced an internal cross-platform library (Kotlin → JavaScript/Swift) to bridge React context and Redux stores into Web Workers, enabling shared state and cache access for parallelized processing without blocking the main thread}
+\resumeItem{Built a highly composable set of React components for rendering interactive data tables, accelerating future feature development while supporting virtualization, sorting, filtering, column pinning, and pagination}
+\resumeItem{Built a native margin onboarding flow for Robinhood Legend, eliminating a redirect to the classic app, reducing onboarding time by 70\% and increasing margin enrollment rates by 12\%}
 \resumeItem{Redesigned the margin call interface with intuitive risk indicators, detailed requirement breakdowns, and actionable recovery steps to help users better understand their margin obligations and reduce overall fund recovery time}
 \resumeItemListEnd
 
@@ -173,8 +174,8 @@
 \resumeSubheadingUpd{Robinhood}{May 2025 - Sept 2025}{Software Engineer Intern}{Toronto, ON}
 \vspace{0.3em}
 \resumeItemListStart
-\resumeItem{Owned end-to-end development and delivery of a real-time margin maintenance table built with React and TypeScript, featuring embedded trade execution and risk indicators.}
-\resumeItem{Overhauled the margin experience by expanding the server-driven UI to include futures traders and unifying business logic across Web, iOS, and Android, driving a 43\% increase in visitors to the margin experience.}
+\resumeItem{Owned end-to-end development and delivery of a real-time margin maintenance table built with React and TypeScript, featuring embedded trade execution and risk indicators}
+\resumeItem{Overhauled the margin experience by expanding the server-driven UI to include futures traders and unifying business logic across Web, iOS, and Android, driving a 43\% increase in visitors to the margin experience}
 \resumeItem{Enhanced a Protobuf-based server-driven UI architecture by implementing 12 foundational components in Python and Typescript along with a logging framework to increase system usage and maintainability}
 \resumeItem{Repaired the core integration suite for the margin experience and added 20+ test suites, achieving 93\% code coverage}
 \resumeItemListEnd
@@ -214,30 +215,24 @@
 %    \resumeItem{Bullet Point 2.}
 %  \resumeItemListEnd
 %\resumeSubHeadingListEnd
-
-\resumeSubheadingInline{Void - AI App Builder}{}{(Next.js, TypeScript, Prisma, Docker)}
-\vspace{0.2em}
-\resumeItemListStart
-\resumeItem{Developed an app to generate and deploy web apps from user prompts, using Docker for sandboxed code execution and real-time previews, a persistent background job queue for async AI build tasks}
-\resumeItemListEnd
-
 \resumeSubheadingInline{Distributed Image Processing}{}{(C++, OpenMPI)}
 \vspace{0.2em}
 \resumeItemListStart
-\resumeItem{Accelerated the processing of gigapixel-scale images by 3.8x on 4 nodes by designing a scalable OpenMPI pipeline that partitioned data across an N-node cluster}
+\resumeItem{Accelerated the processing of gigapixel-scale images by 3.8x on 4 nodes by designing a scalable OpenMPI pipeline allowing data to be partitioned across an N-node cluster}
 \resumeItemListEnd
-
-
 \resumeSubheadingInline{AI Bug Trace}{}{(Python, FastAPI, LangChain, Docker)}
 \vspace{0.2em}
 \resumeItemListStart
-\resumeItem{Built a dockerized backend service to track and evaluate developer debugging workflows by capturing file operations, terminal commands, test results and pull requests}
-\resumeItem{Developed a custom VSCode extension to capture real-time debugging activity and stream it to the backend for analysis}
+\resumeItem{Built a dockerized backend service to track and evaluate developer debugging workflows by capturing file operations, terminal commands, test results and pull requests to collect better data for fine-tuning LLM models}
 \resumeItemListEnd
 
-
-
+\resumeSubheadingInline{Chess}{}{(React, TypeScript, Socket.io, Flask)}
+\vspace{0.2em}
+\resumeItemListStart
+\resumeItem{Built a 2 player chess game with real-time updates and 250 millisecond synchronization latency through WebSockets}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
+
 \vspace{-1em}
 
 \end{document}
